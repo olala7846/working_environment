@@ -6,4 +6,5 @@ terminal configuration files
 2. .zshrc
 3. tmux config
 
-
+To use config file, simply copy
+`cp ./.tmux.conf ~/`

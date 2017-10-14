@@ -1,38 +1,3 @@
-set nocompatible
-filetype off
-
-" set the runtime path to include Vundle and initinitialize"
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" "call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'mattn/emmet-vim'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'mileszs/ack.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 set bs=2
 set background=dark
 set wrapmargin=8
@@ -65,12 +30,6 @@ nnoremap , <C-w>
 
 " ag search integrate with ack.vim
 let g:ackprg = 'ag --vimgrep'
-
-" change IndentGuides plugin color and detault enable it
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_enable_on_vim_startup = 1
-hi IndentGuidesEven ctermbg=235
-hi IndentGuidesOdd ctermbg=black
 
 " map command to :IndentGuidesEnable
 map <F3> :IndentGuidesToggle<CR>
